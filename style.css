@@ -1,0 +1,239 @@
+
+h1{
+    text-align: center;
+}
+header {
+    background-color: #1a818d;
+    color: white;
+    
+    text-align:right;
+    flex-wrap: wrap;
+    border-radius:  35px; 
+  
+}
+ img{
+   display: flex;
+    border-radius: 100px;
+    
+}
+
+
+.start button{
+    background-color:aqua;
+    border-radius: 30px;
+    justify-content: left;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    gap:20px; 
+}
+
+button:hover {
+    background-color: darkorange;
+   
+}
+#home{
+    background-color: aqua;
+    border :  3px dashed red;
+    padding: 10px 100px 10px 20px;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+#home p{
+    font-size: 25px;
+
+}
+#home h2{
+    color:blue;
+
+
+}
+
+     
+
+.tea-list{
+    font-size:25px ;
+}
+
+ #food-menu {
+    text-align: center;
+    padding: 30px;
+    background-color:aqua;
+}
+
+#food-menu h2 {
+    font-size: 35px;
+    color: brown;
+    margin-bottom: 25px;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.box {
+    background-color: white;
+    border: 2px solid brown;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.box h3 {
+    font-size: 23px;
+    color: brown;
+}
+
+.box p {
+    font-size: 18px;
+}
+#menu {
+    text-align: center;
+    padding: 30px;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 2px solid brown;
+    padding: 15px;
+    font-size: 20px;
+}
+
+th {
+    background-color: #1a818d;
+    color: white;
+}
+
+footer {
+    background-color:aqua;
+    color:black;
+    text-align: center;
+   
+    border-radius: 100px;
+    margin-top: 10px;
+    
+    
+}
+
+
+footer h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 18px;
+    margin: 0px;
+    padding-bottom: 0px;
+}
+/* TABLET RESPONSIVE */
+@media (max-width: 1023px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .start {
+        justify-content: center;
+    }
+
+    .box-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    table {
+        width: 95%;
+    }
+
+    #home {
+        padding: 25px;
+    }
+
+    #home p {
+        font-size: 20px;
+    }
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .start {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .start button {
+        width: 150px;
+    }
+
+    .box-container {
+        grid-template-columns: 1fr;
+    }
+
+    #home {
+        padding: 15px;
+    }
+
+    #home h2 {
+        font-size: 23px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    #menu {
+        padding: 20px 5px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 13px;
+        padding: 8px 4px;
+    }
+
+    #food-menu {
+        padding: 20px 12px;
+    }
+
+    #food-menu h2 {
+        font-size: 25px;
+    }
+
+    .box {
+        padding: 12px;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+
+    footer p {
+        font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+}
